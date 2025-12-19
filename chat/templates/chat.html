@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat RAG (gpt-oss)</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #1e1e1e; color: #d4d4d4; display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; }
+        .container { width: 90%; max-width: 800px; margin-top: 20px; }
+        h1 { text-align: center; color: #fff; }
+
+        .chat-window { background-color: #252526; border-radius: 8px; padding: 20px; height: 60vh; overflow-y: auto; border: 1px solid #3e3e42; margin-bottom: 20px; }
+
+        .message { padding: 10px 15px; margin-bottom: 10px; border-radius: 6px; line-height: 1.5; max-width: 80%; }
+        .user { background-color: #0e639c; align-self: flex-end; margin-left: auto; color: white; }
+        .assistant { background-color: #3e3e42; align-self: flex-start; margin-right: auto; color: #d4d4d4; }
+
+        form { display: flex; gap: 10px; }
+        input { flex: 1; padding: 15px; border-radius: 6px; border: 1px solid #3e3e42; background: #333; color: white; }
+        button { padding: 15px 30px; background-color: #0e639c; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #1177bb; }
+
+        .debug-panel { background: #000; padding: 15px; border-radius: 6px; font-size: 0.85em; color: #00ff00; font-family: monospace; border: 1px solid #333; margin-bottom: 50px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RAG System</h1>
+
+        <div class="chat-window" id="chat">
+            {% for msg in history %}
+                <div class="message {{ msg.role }}">
+                    <strong>{{ msg.role|title }}:</strong><br>
+                    {{ msg.content|linebreaksbr }}
+                </div>
+            {% endfor %}
+        </div>
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="query" placeholder="Zadaj pytanie do bazy..." required autofocus autocomplete="off">
+            <button type="submit">Wyślij</button>
+        </form>
+
+        {% if context %}
+        <br>
+        <details>
+            <summary style="cursor: pointer; color: #888;">🔍 Kliknij, aby zobaczyć co RAG znalazł w bazie</summary>
+            <div class="debug-panel">
+                {% for item in context %}
+                    <p>[Dopasowanie: {{ item.score|floatformat:4 }}]<br> {{ item.content }}</p>
+                    <hr style="border-color: #333;">
+                {% endfor %}
+            </div>
+        </details>
+        {% endif %}
+    </div>
+
+    <script>
+        const chat = document.getElementById('chat');
+        chat.scrollTop = chat.scrollHeight;
+    </script>
+</body>
+</html>

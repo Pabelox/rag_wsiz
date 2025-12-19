@@ -1,0 +1,26 @@
+Wstęp do świata: Neonowe Podziemia
+Gra toczy się w roku 2145 w mieście Warszawa Neo. Po Wielkim Blackoucie władzę przejęły korporacje produkujące syntetyczne powietrze. Gracze wcielają się w rolę "Runnerów" – najemników wykonujących brudną robotę dla korporacji Arasaka-Biedronka oraz Cyber-Orlen. Walutą w grze nie są pieniądze, lecz "Kredyty Tlenowe".
+
+Tworzenie Postaci: Atrybuty
+Każdy gracz posiada trzy główne atrybuty: Beton, Krzem oraz Neon. Beton odpowiada za siłę fizyczną i odporność na ból. Krzem to inteligencja i umiejętność hakowania tosterów. Neon to charyzma, szczęście i zdolność świecenia w ciemności. Na start gracz ma 12 punktów do rozdania. Maksymalna wartość atrybutu to 7.
+
+Klasa postaci: Cyber-Szaman
+Cyber-Szaman to specjalista od łączenia technologii z magią ulicy. Jego pasywna zdolność to "Wi-Fi Dusz", która pozwala czytać myśli NPC-ów, jeśli znajdują się w zasięgu 10 metrów i nie mają foliowej czapki. Szaman zaczyna grę z przedmiotem: "Święty Tablet Generacji Pierwszej".
+
+Klasa postaci: Samuraj Ulicy
+Samuraj Ulicy to maszyna do zabijania. Zamiast jednej ręki posiada wszczepioną piłę mechaniczną marki "Stihl 3000". Jego specjalna umiejętność to "Szał Zakupów", która pozwala wykonać dwa ataki w jednej turze, ale kosztuje to 5 Kredytów Tlenowych.
+
+Mechanika: Testy Umiejętności
+Aby wykonać test (np. otwarcie zamka, strzał), gracz rzuca garścią kostek sześciościennych (k6). Liczba kostek jest równa wartości używanego Atrybutu. Każdy wynik 5 lub 6 to sukces. Jeśli gracz wyrzuci same jedynki, następuje "Krytyczna Awaria Systemu" – postać traci przytomność na 1d4 tury.
+
+System Walki: Inicjatywa
+Walka odbywa się w turach. O kolejności decyduje Inicjatywa. Oblicza się ją według wzoru: (Wartość Krzemu * 2) + poziom kofeiny we krwi postaci. Jeśli dwie postacie mają tę samą inicjatywę, wygrywa ta, która ma bardziej świecące buty.
+
+Ekwipunek: Granat EMP "Ziemniak"
+Najpopularniejsza broń miotana w Warszawie Neo. Wygląda jak zwykły ziemniak, ale po wyciągnięciu zawleczki (korzenia) emituje impuls elektromagnetyczny o promieniu 5 metrów. Wyłącza on wszelką elektronikę, w tym rozruszniki serca i elektryczne hulajnogi, na 3 tury.
+
+Bestiariusz: Szczur Kablożerny
+Zmutowane gryzonie zamieszkujące kanały pod Pałacem Kultury. Osiągają wielkość dorosłego psa. Żywią się światłowodami, przez co powodują lagowanie internetu w całej dzielnicy. Są wrażliwe na wodę, która powoduje zwarcie w ich układzie nerwowym.
+
+Bestiariusz: Dron Windykator
+Latająca jednostka bojowa wysyłana do graczy, którzy nie spłacili kredytu. Jest uzbrojona w działko na zszywacze biurowe. Ma pancerz klasy 4, co oznacza, że można go zniszczyć tylko bronią przeciwpancerną lub bardzo obraźliwą wyzwiskami (atak na atrybut Neon).
