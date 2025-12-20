@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 from django.conf import settings
 import os
 import json
-from chat.rag_utils import get_embedding
+from RAG.chat.rag_utils import get_embedding
 
 
 class Command(BaseCommand):
